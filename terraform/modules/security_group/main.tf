@@ -26,7 +26,7 @@ resource "aws_security_group" "jenkins_sg" {
       from_port = "22"
       to_port = "22"
       protocol = "tcp"
-      cidr_blocks = ["${var.my_ip}/32"]
+      cidr_blocks = ["${var.my_ip}/0"]
    }
 
    egress {
